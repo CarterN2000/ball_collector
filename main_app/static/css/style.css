@@ -1,0 +1,16 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    border: 2px solid black;
+    margin: 2vh;
+    padding-left: 2vh;
+}
+
+.header {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+}

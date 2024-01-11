@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ball.name}}!</h1>
+
+<div class="card">
+    <p>Brand: {{ball.brand}}</p>
+    <p>Size: {{ball.size}}</p>
+</div>
+<div>
+    <a href="{% url 'update_ball' ball.id %}">Edit</a>
+    <a href="{% url 'delete_ball' ball.id %}">Delete</a>
+</div>
+{% endblock %}

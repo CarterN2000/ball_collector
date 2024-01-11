@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Our Balls!</h1>
+
+{% for ball in balls%}
+
+<div class="card">
+    <h2>Ball: {{ball.name}}</h2>
+    <a href="{% url 'detail' ball.id %}">See More Details</a>
+</div>
+{%endfor%}
+{% endblock %}
